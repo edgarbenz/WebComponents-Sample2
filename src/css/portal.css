@@ -1,0 +1,144 @@
+    :root{
+       
+    }
+    .catalogo{
+        position:relative;
+        width: 100%;
+        background: black;
+        display:flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+    }
+
+    .pelicula{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        --borde-fav:black;
+        flex: 1;
+        border: 5px solid var(--borde-fav);
+        overflow: hidden;
+        background-color: tomato;
+        min-width: 250px;
+        min-height: 200px;
+        margin: 8px;
+    }
+    .pelicula:active{
+        --borde-fav:yellow;
+        transition: 0.5s easy-in-out;
+
+    }
+
+ /*   .pelicula:hover .imagen-pelicula{
+        visibility: hidden;
+    }*/
+
+    .pelicula:hover .masinfo{
+        visibility: visible;
+    }
+    .masinfo{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 0.8rem;
+        background-color: black;
+        background-size: contain;
+        visibility: hidden;
+    }
+    .imagen-pelicula{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        visibility: visible;
+    }
+    .peli01:nth-child(1){
+        background-image: url("../images/LaOvejaNegra.JPG");
+        background-size: cover;
+    }
+    .peli02:nth-child(2){
+        background-image: url("../images/Apollo18.JPG");
+        background-size: cover;
+    }
+    .peli03:nth-child(3){
+        background-image: url("../images/Castle.JPG");
+        background-size: cover;
+    }
+    .peli04:nth-child(4){
+        background-image: url("../images/Creepshow.JPG");
+        background-size: cover;
+    }
+    .peli05:nth-child(1){
+        background-image: url("../images/ElCisneNegro.JPG");
+        background-size: cover;
+    }
+    .peli06:nth-child(2){
+        background-image: url("../images/ElHombreArana.JPG");
+        background-size: cover;
+    }
+    .peli07:nth-child(3){
+        background-image: url("../images/ElPlanetaDeLosSimios.JPG");
+        background-size: cover;
+    }
+    .peli08:nth-child(4){
+        background-image: url("../images/Everest.JPG");
+        background-size: cover;
+    }    
+    .peli09:nth-child(1){
+        background-image: url("../images/GigantesDeAcero.JPG");
+        background-size: cover;
+    }
+    .peli10:nth-child(2){
+        background-image: url("../images/BobEsponjaCapture.JPG");
+        background-size: cover;
+    }
+    .peli11:nth-child(3){
+        background-image: url("../images/LaQuintaOla.JPG");
+        background-size: cover;
+    }
+    .peli12:nth-child(4){
+        background-image: url("../images/LasCartas.JPG");
+        background-size: cover;
+    }    
+    .peli13:nth-child(1){
+        background-image: url("../images/Los\ Pajaros.JPG");
+        background-size: cover;
+    }
+    .peli14:nth-child(2){
+        background-image: url("../images/LosExtranos.JPG");
+        background-size: cover;
+    }
+    .peli15:nth-child(3){
+        background-image: url("../images/MiGranOportunidad.JPG");
+        background-size: cover;
+    }
+    .peli16:nth-child(4){
+        background-image: url("../images/PajaroLoco.JPG");
+        background-size: cover;
+    }    
+    .peli17:nth-child(1){
+        background-image: url("../images/Pasajeros.JPG");
+        background-size: cover;
+    }
+    .peli18:nth-child(2){
+        background-image: url("../images/RosarioTijeras.JPG");
+        background-size: cover;
+    }
+    .peli19:nth-child(3){
+        background-image: url("../images/Terminator.JPG");
+        background-size: cover;
+    }
+    .peli20:nth-child(4){
+        background-image: url("../images/TheWalkingDead.JPG");
+        background-size: cover;
+    }    
+    /*
+    .pelicula{
+        flex:1;
+        border:1px black;
+        position: absolute;
+    }
+    .imagen-pelicula{
+        position: absolute;
+        background: url("../images/GigantesDeAcero.JPG");
+    }
+    */

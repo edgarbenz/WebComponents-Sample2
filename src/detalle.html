@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edgar Benzor">
+    <meta name="description" content="Practica del Curso HTML y CSS">
+    <meta name="keywords" content="html, css, desarrollo web">
+    <title>Video Base</title>
+    
+    <link rel="icon" href="images/icono_logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/piepagina.css">
+    <link rel="stylesheet" href="./css/detalle.css">
+
+    <style>
+        #trailer{
+            border: 3px dashed #ffffff;
+            box-shadow:12px 12px 40px 8px red;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="barra-principal">
+        <div class="logotipo">
+            <img src="./images/logo.jpg" alt="Logo Video Base">
+        </div> 
+        <form action="#" method="GET" name="buscar_pelicula">
+            <input class="buscar" type="buscar_pelicula" name="buscar_pelicula" 
+                   placeholder="Buscar">
+        </form>   
+        <input class="boton-cerrar" type="submit" value="Cerrar Sesión"><br>
+    </nav>
+</header>
+<nav class="navbar">
+    <ul class="menus">
+        <li><a href="#">Novedades</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Peliculas</a></li>
+        <li><a href="#">Favoritos</a></li>
+    </ul>
+</nav>
+    
+<main>
+    <section id= "rejilla">
+        <li>
+            <article id="foto_pelicula">
+                <img src="./images/backtothefuture.JPG" alt="BackToTheFuture">
+            </article>
+        </li>
+        <li>
+            <article id="info_pelicula">
+                   <span id="titulo-pel">Volver al futuro</span> <br> <br>
+                   ***** Calificación <br>
+                    1985 <br><br>
+                    Back to the Future (1985)PG <br>
+                    Michael J. Fox interpreta a Marty McFly quien debe volver al 
+                    pasado para remendar los errores que cometió y que atentan 
+                    contra su propia existencia. No te pierdas esta película memorable.
+                    <br>
+                    Géneros: Familia, Comedia, Aventura
+            </article>
+        </li>
+        <li >
+            <span id="titulo-trailer">Ver trailer</span>  <br><br>
+            <aside>
+                <video id="trailer" controls width="300" height="190" noborder>
+                <source src="./videos/Backtothe Future.mp4"
+                        type="video/mp4">
+                <source src="./videos/Backtothe Future.ogv"
+                        type="video/ogv">
+                <source src="./videos/Backtothe Future.webm"
+                        type="video/webm">        
+                </video>                
+            </aside>
+        </li>
+    </section>
+</main>
+
+<section id="tambien-ver">
+    <h3>Otras personas también vieron este contenido:</h3>
+        <section class="catalogo cat01">
+            <div class="pelicula peli01">
+                    <div class="masinfo">
+                        <h3 style="text-align: center;">Apollo 18</h3>
+                        <span style="color:rgba(141, 125, 34, 0.664)">*****</span>
+                        Calificación  <br>
+                        Año: 2019
+                        <br>
+                        Sinopsis:<br>
+                        A la manera de un falso documental, 'Apollo 18' relata la verdadera 
+                        historia de la última misión secreta de la NASA a la Luna en diciembre 
+                        de 1972 y acompaña la peligrosa expedición de dos astronautas norteamericanos.
+                    </div>
+            </div>
+            <article class="pelicula peli02">
+                <div class="masinfo">
+                    <h3 style="text-align: center;">Apollo 18</h3>
+                    <span style="color:rgba(141, 125, 34, 0.664)">*****</span>
+                    Calificación  <br>
+                    Año: 2019
+                    <br>
+                    Sinopsis:<br>
+                    A la manera de un falso documental, 'Apollo 18' relata la verdadera 
+                    historia de la última misión secreta de la NASA a la Luna en diciembre 
+                    de 1972 y acompaña la peligrosa expedición de dos astronautas norteamericanos.
+                </div>    
+            </article>    
+            <article class="pelicula peli03">
+                <div class="masinfo">
+                    <h3 style="text-align: center;">Apollo 18</h3>
+                    <span style="color:rgba(141, 125, 34, 0.664)">*****</span>
+                    Calificación  <br>
+                    Año: 2019
+                    <br>
+                    Sinopsis:<br>
+                    A la manera de un falso documental, 'Apollo 18' relata la verdadera 
+                    historia de la última misión secreta de la NASA a la Luna en diciembre 
+                    de 1972 y acompaña la peligrosa expedición de dos astronautas norteamericanos.
+                </div>    
+            </article>    
+            <article class="pelicula peli04">
+                <div class="masinfo">
+                    <h3 style="text-align: center;">Apollo 18</h3>
+                    <span style="color:rgba(141, 125, 34, 0.664)">*****</span>
+                    Calificación  <br>
+                    Año: 2019
+                    <br>
+                    Sinopsis:<br>
+                    A la manera de un falso documental, 'Apollo 18' relata la verdadera 
+                    historia de la última misión secreta de la NASA a la Luna en diciembre 
+                    de 1972 y acompaña la peligrosa expedición de dos astronautas norteamericanos.
+                </div>    
+            </article>  
+        </section>    
+</section>
+    
+<footer class="pie_de_pagina">
+    <ul class="linksfooter">
+        <li><a href="#">Tutoriales</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+        <li><a href="#">Requerimientos Mínimos</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li><a href="#">Politicas de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li><a href="#">Licencia de Usuario Final</a></li>
+    </ul>
+</footer>
+</body>
+</html>

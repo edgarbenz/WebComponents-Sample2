@@ -1,0 +1,15 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: black;
+    color:white;
+}
+a, a:link, a:visited, a:focus {
+    text-decoration:none;
+    color:white;
+}
+
+
+
+

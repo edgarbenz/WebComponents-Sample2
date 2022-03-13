@@ -1,0 +1,38 @@
+
+/*
+<footer class="pie_de_pagina">
+ <ul class="linksfooter">
+     <li><a href="#">Tutoriales</a></li>
+     <li><a href="#">Preguntas Frecuentes</a></li>
+     <li><a href="#">Requerimientos Mínimos</a></li>
+     <li><a href="#">Términos y Condiciones</a></li>
+     <li><a href="#">Politicas de Privacidad</a></li>
+     <li><a href="#">Términos y Condiciones</a></li>
+     <li><a href="#">Licencia de Usuario Final</a></li>
+ </ul>
+</footer>*/
+.linksfooter{
+    position: relative;
+    width: 100%;
+    background: black;
+    display:flex;
+    flex-flow: row;
+    align-content: flex-start;
+    list-style: none;
+    overflow: hidden;
+    
+}
+.linksfooter a{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+    flex: 1;
+    color: white;
+  /*   min-width: 150px;
+    min-height: 50px;*/
+     
+    font-size: .8em;
+    margin: 10px;
+   
+}

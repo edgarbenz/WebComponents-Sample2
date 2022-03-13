@@ -1,0 +1,96 @@
+#rejilla{
+    position: relative;
+    width: 100%;
+    background: black;
+    color:white;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+#rejilla li{
+    position: relative;
+    flex: 1;
+    background: black;
+    color:white;
+    overflow: hidden;
+    list-style: none;
+    padding: 20px;
+}
+#info_pelicula{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+#titulo-pel{
+    font-size: 1.5rem;
+    color: orange;
+}
+#titulo-trailer{
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.4rem;
+    
+    color:white;
+}
+.catalogo{
+    position:relative;
+    width: 100%;
+    background: black;
+    display:flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.pelicula{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    --borde-fav:black;
+    flex: 1;
+    border: 5px solid var(--borde-fav);
+    overflow: hidden;
+    background-color: tomato;
+    min-width: 250px;
+    min-height: 200px;
+    margin: 8px;
+}
+.pelicula:active{
+    --borde-fav:yellow;
+}
+
+/*   .pelicula:hover .imagen-pelicula{
+    visibility: hidden;
+}*/
+
+.pelicula:hover .masinfo{
+    visibility: visible;
+}
+.masinfo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 0.8rem;
+    background-color: black;
+    background-size: contain;
+    visibility: hidden;
+}
+.imagen-pelicula{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+}
+.peli01:nth-child(1){
+    background-image: url("../images/Apollo18.JPG");
+    background-size: cover;
+}
+.peli02:nth-child(2){
+    background-image: url("../images/BobEsponjaCapture.JPG");
+    background-size: cover;
+}
+.peli03:nth-child(3){
+    background-image: url("../images/Castle.JPG");
+    background-size: cover;
+}
+.peli04:nth-child(4){
+    background-image: url("../images/Creepshow.JPG");
+    background-size: cover;
+}
