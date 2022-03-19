@@ -5,7 +5,9 @@ Well, Here I applied the concepts for create webcomponents inside my HTML-CSS3 p
 ## Getting Started
 
 Copy this repository in your local machine
+
 Go to src directory and run browserSync on Visual Studio Code
+
 Add this in the URL: /src/detalle.html to visualize the page where I applied webComponents
 
 ```
